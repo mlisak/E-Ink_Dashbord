@@ -744,4 +744,99 @@ Text GLabel 5600 1300 2    50   Input ~ 0
 +15V
 Text GLabel 5600 3750 2    50   Input ~ 0
 -15V
+$Comp
+L power:GND #PWR?
+U 1 1 5C982951
+P 6450 1100
+F 0 "#PWR?" H 6450 850 50  0001 C CNN
+F 1 "GND" H 6455 927 50  0000 C CNN
+F 2 "" H 6450 1100 50  0001 C CNN
+F 3 "" H 6450 1100 50  0001 C CNN
+	1    6450 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C982C40
+P 6700 1550
+F 0 "R?" H 6630 1504 50  0000 R CNN
+F 1 "47k" H 6630 1595 50  0000 R CNN
+F 2 "" V 6630 1550 50  0001 C CNN
+F 3 "~" H 6700 1550 50  0001 C CNN
+	1    6700 1550
+	-1   0    0    1   
+$EndComp
+Text GLabel 7150 950  1    50   Input ~ 0
++15V
+Text GLabel 7150 1850 3    50   Input ~ 0
+-15V
+$Comp
+L Device:R_POT RV?
+U 1 1 5C982D92
+P 6700 1200
+F 0 "RV?" H 6900 1350 50  0000 R CNN
+F 1 "10k" H 6900 1100 50  0000 R CNN
+F 2 "" H 6700 1200 50  0001 C CNN
+F 3 "~" H 6700 1200 50  0001 C CNN
+	1    6700 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM358 U?
+U 1 1 5C982EEC
+P 7250 1300
+F 0 "U?" H 7350 1450 50  0000 C CNN
+F 1 "LM358" H 7400 1150 50  0000 C CNN
+F 2 "" H 7250 1300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 7250 1300 50  0001 C CNN
+	1    7250 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM358 U?
+U 3 1 5C983395
+P 7250 1300
+F 0 "U?" H 7208 1346 50  0001 L CNN
+F 1 "LM358" H 7208 1255 50  0001 L CNN
+F 2 "" H 7250 1300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 7250 1300 50  0001 C CNN
+	3    7250 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 1200 6850 1200
+Wire Wire Line
+	6700 1350 6700 1400
+Wire Wire Line
+	6700 1700 6700 1750
+Wire Wire Line
+	6700 1750 7150 1750
+Wire Wire Line
+	7150 1750 7150 1600
+Wire Wire Line
+	7150 1850 7150 1750
+Connection ~ 7150 1750
+Wire Wire Line
+	6950 1400 6900 1400
+Wire Wire Line
+	6900 1400 6900 1650
+Wire Wire Line
+	6900 1650 7650 1650
+Wire Wire Line
+	7650 1650 7650 1300
+Wire Wire Line
+	7650 1300 7550 1300
+Wire Wire Line
+	7750 1300 7650 1300
+Connection ~ 7650 1300
+Wire Wire Line
+	7150 1000 7150 950 
+Wire Wire Line
+	6700 1050 6700 1000
+Wire Wire Line
+	6700 1000 6450 1000
+Wire Wire Line
+	6450 1000 6450 1100
+Text GLabel 7750 1300 2    50   Input ~ 0
+VCOM
 $EndSCHEMATC
