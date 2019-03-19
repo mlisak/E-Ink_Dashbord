@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:eink_dashboard-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -625,4 +626,122 @@ Text GLabel 4400 1200 1    50   Input ~ 0
 +22V
 Text GLabel 4400 3850 3    50   Input ~ 0
 -20V
+$Comp
+L Regulator_Linear:L78L15_SOT89 U?
+U 1 1 5C9058B0
+P 4950 1300
+F 0 "U?" H 4950 1542 50  0000 C CNN
+F 1 "L78L15_SOT89" H 4950 1451 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-89-3" H 4950 1500 50  0001 C CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf" H 4950 1250 50  0001 C CNN
+	1    4950 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:L79L15_SOT89 U?
+U 1 1 5C9059F7
+P 4950 3750
+F 0 "U?" H 4950 3600 50  0000 C CNN
+F 1 "L79L15_SOT89" H 4950 3509 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-89-3" H 4950 3550 50  0001 C CIN
+F 3 "http://www.farnell.com/datasheets/1827870.pdf" H 4950 3750 50  0001 C CNN
+	1    4950 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C906065
+P 4950 1900
+F 0 "#PWR?" H 4950 1650 50  0001 C CNN
+F 1 "GND" H 4955 1727 50  0000 C CNN
+F 2 "" H 4950 1900 50  0001 C CNN
+F 3 "" H 4950 1900 50  0001 C CNN
+	1    4950 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 1900 4950 1600
+$Comp
+L Device:C C?
+U 1 1 5C908341
+P 5400 1600
+F 0 "C?" H 5515 1646 50  0000 L CNN
+F 1 "100n" H 5515 1555 50  0000 L CNN
+F 2 "" H 5438 1450 50  0001 C CNN
+F 3 "~" H 5400 1600 50  0001 C CNN
+	1    5400 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C9083DD
+P 5400 3950
+F 0 "C?" H 5515 3996 50  0000 L CNN
+F 1 "100n" H 5515 3905 50  0000 L CNN
+F 2 "" H 5438 3800 50  0001 C CNN
+F 3 "~" H 5400 3950 50  0001 C CNN
+	1    5400 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C90CFD7
+P 5400 1900
+F 0 "#PWR?" H 5400 1650 50  0001 C CNN
+F 1 "GND" H 5405 1727 50  0000 C CNN
+F 2 "" H 5400 1900 50  0001 C CNN
+F 3 "" H 5400 1900 50  0001 C CNN
+	1    5400 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 1900 5400 1750
+Wire Wire Line
+	5250 1300 5400 1300
+Wire Wire Line
+	5400 1300 5400 1450
+Wire Wire Line
+	5600 1300 5400 1300
+Connection ~ 5400 1300
+$Comp
+L power:GND #PWR?
+U 1 1 5C913DAA
+P 5400 4150
+F 0 "#PWR?" H 5400 3900 50  0001 C CNN
+F 1 "GND" H 5405 3977 50  0000 C CNN
+F 2 "" H 5400 4150 50  0001 C CNN
+F 3 "" H 5400 4150 50  0001 C CNN
+	1    5400 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 4150 5400 4100
+Wire Wire Line
+	5250 3750 5400 3750
+Wire Wire Line
+	5400 3750 5400 3800
+Wire Wire Line
+	5600 3750 5400 3750
+Connection ~ 5400 3750
+$Comp
+L power:GND #PWR?
+U 1 1 5C91AE3D
+P 4600 4150
+F 0 "#PWR?" H 4600 3900 50  0001 C CNN
+F 1 "GND" H 4605 3977 50  0000 C CNN
+F 2 "" H 4600 4150 50  0001 C CNN
+F 3 "" H 4600 4150 50  0001 C CNN
+	1    4600 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 4150 4600 3400
+Wire Wire Line
+	4600 3400 4950 3400
+Wire Wire Line
+	4950 3400 4950 3450
+Text GLabel 5600 1300 2    50   Input ~ 0
++15V
+Text GLabel 5600 3750 2    50   Input ~ 0
+-15V
 $EndSCHEMATC
