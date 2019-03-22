@@ -1,7 +1,7 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# ED060SC4
+# Custom
 #
 DEF ED060SC4 U 0 40 Y Y 1 F N
 F0 "U" 500 800 50 H V C CNN
