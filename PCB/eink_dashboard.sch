@@ -1268,25 +1268,10 @@ F 3 "" H 3450 7450 50  0001 C CNN
 	1    3450 7450
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J?
-U 1 1 5CB9D3F2
-P 3700 6800
-F 0 "J?" H 3780 6792 50  0000 L CNN
-F 1 "Conn_01x02" H 3780 6701 50  0000 L CNN
-F 2 "" H 3700 6800 50  0001 C CNN
-F 3 "~" H 3700 6800 50  0001 C CNN
-	1    3700 6800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	3500 6800 3450 6800
+	3450 6700 3450 6350
 Wire Wire Line
-	3450 6800 3450 6350
-Wire Wire Line
-	3500 6900 3450 6900
-Wire Wire Line
-	3450 6900 3450 7450
+	3450 7000 3450 7450
 $Comp
 L Custom:ED060SC4 U?
 U 1 1 5C97BBD1
@@ -1910,4 +1895,15 @@ Text GLabel 9750 2150 2    50   Input ~ 0
 CL
 Text GLabel 9750 2050 2    50   Input ~ 0
 OE
+$Comp
+L Device:Battery_Cell BT?
+U 1 1 5C9E6ED5
+P 3450 6900
+F 0 "BT?" H 3568 6996 50  0000 L CNN
+F 1 "Battery_Cell" H 3568 6905 50  0000 L CNN
+F 2 "" V 3450 6960 50  0001 C CNN
+F 3 "~" V 3450 6960 50  0001 C CNN
+	1    3450 6900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
