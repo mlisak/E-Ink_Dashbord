@@ -1570,17 +1570,11 @@ Text GLabel 9700 5050 3    50   Input ~ 0
 D
 Text GLabel 9600 5050 3    50   Input ~ 0
 CLK
-Wire Wire Line
-	8450 2750 8350 2750
-Wire Wire Line
-	8450 2650 8350 2650
-Wire Wire Line
-	8450 2550 8350 2550
-Text GLabel 8350 2550 0    50   Input ~ 0
+Text GLabel 9750 2250 2    50   Input ~ 0
 STR
-Text GLabel 8350 2650 0    50   Input ~ 0
+Text GLabel 9750 2350 2    50   Input ~ 0
 D
-Text GLabel 8350 2750 0    50   Input ~ 0
+Text GLabel 9750 2450 2    50   Input ~ 0
 CLK
 $Comp
 L Device:R R?
@@ -1888,4 +1882,10 @@ Wire Wire Line
 Connection ~ 2850 4950
 Wire Wire Line
 	2850 4950 2950 4950
+Wire Wire Line
+	9650 2250 9750 2250
+Wire Wire Line
+	9750 2350 9650 2350
+Wire Wire Line
+	9650 2450 9750 2450
 $EndSCHEMATC
