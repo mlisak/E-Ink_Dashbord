@@ -2,4 +2,5 @@
 *cache.lib
 *.bck
 *.net
+PCB/plots/*
 
