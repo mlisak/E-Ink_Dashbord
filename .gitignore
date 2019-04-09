@@ -3,4 +3,6 @@
 *.bck
 *.net
 PCB/plots/*
+*bak
+*cache
 
