@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:eink_dashboard-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -1570,9 +1570,9 @@ Text GLabel 9700 5050 3    50   Input ~ 0
 D
 Text GLabel 9600 5050 3    50   Input ~ 0
 CLK
-Text GLabel 9750 2250 2    50   Input ~ 0
-STR
 Text GLabel 9750 2350 2    50   Input ~ 0
+STR
+Text GLabel 9750 2250 2    50   Input ~ 0
 D
 Text GLabel 9750 2450 2    50   Input ~ 0
 CLK
@@ -1883,9 +1883,9 @@ Connection ~ 2850 4950
 Wire Wire Line
 	2850 4950 2950 4950
 Wire Wire Line
+	9650 2450 9750 2450
+Wire Wire Line
 	9650 2250 9750 2250
 Wire Wire Line
 	9750 2350 9650 2350
-Wire Wire Line
-	9650 2450 9750 2450
 $EndSCHEMATC
