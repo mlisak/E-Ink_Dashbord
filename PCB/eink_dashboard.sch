@@ -187,12 +187,12 @@ $Comp
 L Diode:1N5817 D3
 U 1 1 5C8FE657
 P 3700 3500
-F 0 "D3" V 3746 3421 50  0000 R CNN
-F 1 "SS24" V 3655 3421 50  0000 R CNN
+F 0 "D3" V 3750 3650 50  0000 R CNN
+F 1 "SS24" V 3650 3750 50  0000 R CNN
 F 2 "Diodes_SMD:D_SOD-123F" H 3700 3325 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2552652.pdf" H 3700 3500 50  0001 C CNN
 	1    3700 3500
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R11
