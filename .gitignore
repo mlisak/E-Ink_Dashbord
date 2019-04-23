@@ -6,4 +6,6 @@ PCB/plots/*
 *bak
 *cache
 PCB/bom/*
+Firmware/build
+Firmware/sdkconfig*
 

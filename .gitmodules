@@ -1,0 +1,4 @@
+[submodule "Firmware/ESP8266_RTOS_SDK"]
+	path = Firmware/ESP8266_RTOS_SDK
+	url = https://github.com/espressif/ESP8266_RTOS_SDK
+	branch = release/v3.1
