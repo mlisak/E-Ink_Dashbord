@@ -1806,9 +1806,7 @@ Wire Wire Line
 Connection ~ 9700 1650
 Wire Wire Line
 	9650 1950 10500 1950
-Wire Wire Line
-	9650 1850 9750 1850
-Text GLabel 9750 1850 2    50   Input ~ 0
+Text GLabel 9750 2550 2    50   Input ~ 0
 EINK_EN
 Wire Wire Line
 	9650 2050 9750 2050
@@ -1888,4 +1886,6 @@ Wire Wire Line
 	9650 2250 9750 2250
 Wire Wire Line
 	9750 2350 9650 2350
+Wire Wire Line
+	9750 2550 9650 2550
 $EndSCHEMATC
