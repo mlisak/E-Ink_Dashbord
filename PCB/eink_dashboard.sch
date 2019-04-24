@@ -1570,10 +1570,6 @@ Text GLabel 9700 5050 3    50   Input ~ 0
 D
 Text GLabel 9600 5050 3    50   Input ~ 0
 CLK
-Text GLabel 9750 2350 2    50   Input ~ 0
-STR
-Text GLabel 9750 2250 2    50   Input ~ 0
-D
 Text GLabel 9750 2450 2    50   Input ~ 0
 CLK
 $Comp
@@ -1884,6 +1880,10 @@ Wire Wire Line
 	2850 4950 2950 4950
 Wire Wire Line
 	9650 2450 9750 2450
+Text GLabel 9750 2350 2    50   Input ~ 0
+D
+Text GLabel 9750 2250 2    50   Input ~ 0
+STR
 Wire Wire Line
 	9650 2250 9750 2250
 Wire Wire Line
