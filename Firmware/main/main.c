@@ -16,7 +16,6 @@
 
 static const char* TAG = "e-ink dashboard";
 
-static void IRAM_ATTR spi_event_callback(int event, void* arg) {}
 
 static esp_err_t init_gpio()
 {
@@ -53,7 +52,7 @@ static esp_err_t init_spi()
 
     spi_config.mode = SPI_MASTER_MODE;
     spi_config.clk_div = SPI_4MHz_DIV;
-    spi_config.event_cb = spi_event_callback;
+    spi_config.event_cb = NULL;
 
     spi_config.intr_enable.val = SPI_MASTER_DEFAULT_INTR_ENABLE;
 
