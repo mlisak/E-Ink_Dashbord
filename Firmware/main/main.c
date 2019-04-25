@@ -65,6 +65,27 @@ static esp_err_t init_spi()
     return ESP_OK;
 }
 
+static esp_err_t spi_write_byte(uint8_t data)
+{
+    uint32_t buf = data << 24;
+    spi_trans_t trans = {0};
+    trans.mosi = &buf;
+    trans.bits.mosi = 8;
+    spi_trans(HSPI_HOST, trans);
+
+    return ESP_OK;
+}
+
+
+static inline esp_err_t write_eink_data(uint8_t data)
+{
+    spi_write_byte(data);
+    gpio_set_level(CL_PIN, 1);
+    gpio_set_level(CL_PIN, 0);
+
+    return ESP_OK;
+}
+
 void app_main(void)
 {
     init_spi();
