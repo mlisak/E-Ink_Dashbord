@@ -35,6 +35,8 @@ static esp_err_t init_gpio()
 
     gpio_config(&io_config);
 
+    gpio_set_level(EINK_EN_PIN, 1);
+
     ESP_LOGI(TAG, "gpio initialized!");
 
     return ESP_OK;
@@ -51,7 +53,7 @@ static esp_err_t init_spi()
     spi_config.interface.miso_en = 0;
 
     spi_config.mode = SPI_MASTER_MODE;
-    spi_config.clk_div = SPI_4MHz_DIV;
+    spi_config.clk_div = SPI_2MHz_DIV;
     spi_config.event_cb = NULL;
 
     spi_config.intr_enable.val = SPI_MASTER_DEFAULT_INTR_ENABLE;
