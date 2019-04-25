@@ -16,6 +16,21 @@
 
 static const char* TAG = "e-ink dashboard";
 
+typedef union {
+    struct {
+        uint8_t NEG_EN   : 1;
+        uint8_t POS_EN   : 1;
+        uint8_t GMODE    : 1;
+        uint8_t CKV      : 1;
+        uint8_t SPV      : 1;
+        uint8_t LE       : 1;
+        uint8_t SPH      : 1;
+        uint8_t reserved : 1;
+    };
+    uint8_t val;
+} shift_reg_io_t;
+
+static shift_reg_io_t g_shift_reg;
 
 static esp_err_t init_gpio()
 {
@@ -76,6 +91,28 @@ static esp_err_t spi_write_byte(uint8_t data)
     return ESP_OK;
 }
 
+static inline esp_err_t flush_shift_reg()
+{
+    spi_write_byte(g_shift_reg.val);
+    gpio_set_level(STR_PIN, 1);
+    gpio_set_level(STR_PIN, 0);
+
+    return ESP_OK;
+}
+
+static esp_err_t init_shift_reg_io()
+{
+    g_shift_reg.NEG_EN = 1;
+    g_shift_reg.POS_EN = 1;
+    g_shift_reg.GMODE = 0;
+    g_shift_reg.CKV = 1;
+    g_shift_reg.SPV = 1;
+    g_shift_reg.LE = 0;
+    g_shift_reg.SPH = 1;
+    flush_shift_reg();
+
+    return ESP_OK;
+}
 
 static inline esp_err_t write_eink_data(uint8_t data)
 {
